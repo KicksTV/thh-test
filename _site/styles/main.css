@@ -1,0 +1,55 @@
+/*
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+body {
+  background: #fafafa;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  outline: none;
+}
+
+.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
+	background-color: #263238;
+}
+.paper-toolbar-0 {
+	background: white;
+	border-bottom: #919191 solid 1px;
+	color: #777;
+}
+.paper-toolbar-0.tall {
+	height: 100px;
+}
+#mainToolbar.tall .app-name:not([style-scope]):not(.style-scope) {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	color: #777;
+}
+.paper-toolbar-0 .toolbar-tools.paper-toolbar {
+	height: 32px;
+}
+#drawerToolbar:not([style-scope]):not(.style-scope) {
+	background-color: #263238;
+	height: 150px;
+}
+#topBar>img {
+	margin: auto;
+}
+.paper-menu-0 {
+	background: #37474f;
+}
+.paper-menu-0 .selectable-content.paper-menu > .iron-selected {
+	background: #00acc1;
+}
+.paper-menu a:not([style-scope]):not(.style-scope) {
+	color: #b3d4fc;
+}
