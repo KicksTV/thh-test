@@ -53,3 +53,7 @@ body {
 .paper-menu a:not([style-scope]):not(.style-scope) {
 	color: #b3d4fc;
 }
+.paper-material:not([style-scope]):not(.style-scope) {
+	height: 0;
+
+}

@@ -1,66 +1,51 @@
-<body unresolved>
-  <!-- build:remove -->
-  <span id="browser-sync-binding"></span>
-  <!-- endbuild -->
 
-  <template is="dom-bind" id="app">
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
 
-    <paper-drawer-panel id="paperDrawerPanel">
-      <!-- Drawer Scroll Header Panel -->
-      <paper-scroll-header-panel drawer fixed>
+<template is="dom-bind" id="app">
 
-        <!-- Drawer Toolbar -->
-        <paper-toolbar id="drawerToolbar">
-          <img src="../images/Thh-logo-white-text.png">
-        </paper-toolbar>
+  <paper-drawer-panel id="paperDrawerPanel">
+    <!-- Drawer Scroll Header Panel -->
+    <paper-scroll-header-panel drawer fixed>
 
-        <!-- Drawer Content -->
-        <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
-          <a data-route="home" href="{{baseUrl}}">
-            <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
-          </a>
+      <!-- Drawer Toolbar -->
+      <paper-toolbar id="drawerToolbar">
+        <img src="../images/Thh-logo-white-text.png">
+      </paper-toolbar>
 
-          <a data-route="users" href="{{baseUrl}}users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
-          </a>
+      <!-- Drawer Content -->
+      <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
+        <a data-route="/" href="{{baseUrl}}">
+          <iron-icon icon="home"></iron-icon>
+          <span>Home</span>
+        </a>
 
-          <a data-route="contact" href="{{baseUrl}}contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
-          </a>
-        </paper-menu>
-      </paper-scroll-header-panel>
+        <a data-route="users" href="{{baseUrl}}users">
+          <iron-icon icon="info"></iron-icon>
+          <span>Users</span>
+        </a>
 
-      <!-- Main Area -->
-      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
-        <!-- Main Toolbar -->
-        <paper-toolbar id="mainToolbar" class="tall">
-          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+        <a data-route="contact" href="{{baseUrl}}contact">
+          <iron-icon icon="mail"></iron-icon>
+          <span>Contact</span>
+        </a>
+      </paper-menu>
+    </paper-scroll-header-panel>
 
-          <span class="space"></span>
+    <!-- Main Area -->
+    <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+      <!-- Main Toolbar -->
+      <paper-toolbar id="mainToolbar" class="tall">
+        <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
 
-          <!-- Application name -->
-          <div class="middle middle-container">
-            <div class="app-name">ThamesHare&Hounds</div>
-          </div>
+        <span class="space"></span>
 
-          <!-- Application sub title -->
-        </paper-toolbar>
+        <!-- Application name -->
+        <div class="middle middle-container">
+          <div class="app-name">Thames Hare & Hounds</div>
+        </div>
 
-        <!-- Main Content -->
-     
-      </paper-scroll-header-panel>
-    </paper-drawer-panel>
+        <!-- Application sub title -->
+      </paper-toolbar>
 
-    <paper-toast id="toast">
-      <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
-    </paper-toast>
-
-  </template>
-
-  <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
-</body>
+      <!-- Main Content -->

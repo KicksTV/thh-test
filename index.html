@@ -2,7 +2,33 @@
 layout: default
 ---
 
+<div class="content">
+  
+  <paper-material elevation="1">
+    <my-greeting></my-greeting>
 
+    <p class="subhead">You now have:</p>
+    <my-list></my-list>
+
+    <p>Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+  </paper-material>
+</div>
+
+
+
+
+
+    </paper-scroll-header-panel>
+  </paper-drawer-panel>
+
+  <paper-toast id="toast">
+    <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+  </paper-toast>
+
+</template>
+
+
+<!-- 
 <div class="content">
   <iron-pages attr-for-selected="data-route" selected="{{route}}">
     <section data-route="home" tabindex="-1">
@@ -64,4 +90,4 @@ layout: default
       </paper-material>
     </section>
   </iron-pages>
-</div>
+</div> -->
