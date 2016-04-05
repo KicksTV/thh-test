@@ -85,19 +85,54 @@
 
       <!-- Drawer Content -->
       <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
-        <a data-route="/" href="">
+        <a href="/">
           <iron-icon icon="home"></iron-icon>
           <span>Home</span>
         </a>
 
-        <a data-route="users" href="users">
+        <a href="/about_us/">
           <iron-icon icon="info"></iron-icon>
-          <span>Users</span>
+          <span>About Us</span>
         </a>
 
-        <a data-route="contact" href="contact">
+        <a href="/news/">
+          <iron-icon icon="description"></iron-icon>
+          <span>News</span>
+        </a>
+
+        <a href="/events/">
+          <iron-icon icon="perm-contact-calendar"></iron-icon>
+          <span>Events</span>
+        </a>
+
+        <a href="/races/">
+          <iron-icon icon="directions-run"></iron-icon>
+          <span>Races</span>
+        </a>
+
+        <a href="/courses/">
+          <iron-icon icon="flag"></iron-icon>
+          <span>Courses</span>
+        </a>
+
+        <a href="/history/">
+          <iron-icon icon="history"></iron-icon>
+          <span>History</span>
+        </a>
+
+        <a href="/club_kit/">
+          <iron-icon icon="shopping-cart"></iron-icon>
+          <span>Club Kit</span>
+        </a>
+
+        <a href="/contact/">
           <iron-icon icon="mail"></iron-icon>
           <span>Contact</span>
+        </a>
+
+        <a href="/help/">
+          <iron-icon icon="help"></iron-icon>
+          <span>Help</span>
         </a>
       </paper-menu>
     </paper-scroll-header-panel>
@@ -127,11 +162,8 @@
   
   <paper-material elevation="1">
     <my-greeting></my-greeting>
-
-    <p class="subhead">You now have:</p>
-    <my-list></my-list>
-
-    <p>Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+    <p>Based on Wimbledon Common in South West London, Thames Hare and Hounds is the oldest cross-country running club in the world. Our large membership is made up of runners of all ages and abilities. We enjoy a full program of training, racing and social events, at all of which newcomers are very welcome. To find out more about us click <a href="/about_us/">here</a>.</p>
+    
   </paper-material>
 </div>
 

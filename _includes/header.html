@@ -15,19 +15,54 @@
 
       <!-- Drawer Content -->
       <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
-        <a data-route="/" href="{{baseUrl}}">
+        <a href="/">
           <iron-icon icon="home"></iron-icon>
           <span>Home</span>
         </a>
 
-        <a data-route="users" href="{{baseUrl}}users">
+        <a href="/about_us/">
           <iron-icon icon="info"></iron-icon>
-          <span>Users</span>
+          <span>About Us</span>
         </a>
 
-        <a data-route="contact" href="{{baseUrl}}contact">
+        <a href="/news/">
+          <iron-icon icon="description"></iron-icon>
+          <span>News</span>
+        </a>
+
+        <a href="/events/">
+          <iron-icon icon="perm-contact-calendar"></iron-icon>
+          <span>Events</span>
+        </a>
+
+        <a href="/races/">
+          <iron-icon icon="directions-run"></iron-icon>
+          <span>Races</span>
+        </a>
+
+        <a href="/courses/">
+          <iron-icon icon="flag"></iron-icon>
+          <span>Courses</span>
+        </a>
+
+        <a href="/history/">
+          <iron-icon icon="history"></iron-icon>
+          <span>History</span>
+        </a>
+
+        <a href="/club_kit/">
+          <iron-icon icon="shopping-cart"></iron-icon>
+          <span>Club Kit</span>
+        </a>
+
+        <a href="/contact/">
           <iron-icon icon="mail"></iron-icon>
           <span>Contact</span>
+        </a>
+
+        <a href="/help/">
+          <iron-icon icon="help"></iron-icon>
+          <span>Help</span>
         </a>
       </paper-menu>
     </paper-scroll-header-panel>
